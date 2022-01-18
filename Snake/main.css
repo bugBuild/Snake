@@ -1,0 +1,30 @@
+body{
+    background: rgb(110,110,110);
+}
+.canvas{
+    background: none;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    background: gray;
+}
+.tree{
+    position: absolute;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-name: treerotating;
+    
+}
+@keyframes treerotating{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
